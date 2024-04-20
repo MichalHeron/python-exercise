@@ -101,12 +101,12 @@
 #########
 a = input("podaj dlugosc pierwszego z boków w mm: ")
 while not a.isdigit():
-    a = input("podaj dlugosc pierwszego z boków w mm: ")
+    a = input("nie podałes liczby. podaj dlugosc pierwszego z boków w mm: ")
 
 b = input("podaj dlugosc drugiego z boków w mm: ")
 while not b.isdigit():
-    b = input("podaj dlugosc drugiego z boków w mm: ")
-    
+    b = input("nie podałes liczby. podaj dlugosc drugiego z boków w mm: ")
+
 print("pole prostokąta wynosi: ",  float(a) * float(b))
 
 ###########
