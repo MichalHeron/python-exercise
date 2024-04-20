@@ -110,11 +110,44 @@
 # print("pole prostokąta wynosi: ",  float(a) * float(b))
 
 ########### checking female or male name (latter a in the end)
-your_name = input("podaj swoje imie: ")
+# your_name = input("podaj swoje imie: ")
 
-if your_name[-1] == "a":
-    print("to imie jest żeńskie")
-else:
-    print("to imie jest męskie")
+# if your_name[-1] == "a":
+#     print("to imie jest żeńskie")
+# else:
+#     print("to imie jest męskie")
 
 #####
+number_one = int(input("podaj pierwszą liczbę: "))
+number_two = int(input("podaj drugą liczbę: "))
+number_three = int(input("podaj trzecią liczbę: "))
+
+if number_one > number_two and number_one > number_three:
+    print(number_one)
+    if number_two > number_three:
+        print(number_two)
+        print(number_three)
+    else:
+        print(number_three)
+        print(number_two)
+elif number_two > number_one and number_two > number_three:
+    print(number_two)
+    if number_one > number_three:
+        print(number_one)
+        print(number_three)
+    else:
+        print(number_three)
+        print(number_one)
+else:
+    print(number_three)
+    if number_one > number_two:
+        print(number_one)
+        print(number_two)
+    else:
+        print(number_two)
+        print(number_one)
+
+numbers = [number_one, number_two, number_three]
+numbers.sort(reverse=True)
+print(numbers)
+########
