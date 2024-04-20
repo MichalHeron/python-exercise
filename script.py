@@ -99,14 +99,22 @@
 # print(sum)
 
 #########
-a = input("podaj dlugosc pierwszego z boków w mm: ")
-while not a.isdigit():
-    a = input("nie podałes liczby. podaj dlugosc pierwszego z boków w mm: ")
+# a = input("podaj dlugosc pierwszego z boków w mm: ")
+# while not a.isdigit():
+#     a = input("nie podałes liczby. podaj dlugosc pierwszego z boków w mm: ")
 
-b = input("podaj dlugosc drugiego z boków w mm: ")
-while not b.isdigit():
-    b = input("nie podałes liczby. podaj dlugosc drugiego z boków w mm: ")
+# b = input("podaj dlugosc drugiego z boków w mm: ")
+# while not b.isdigit():
+#     b = input("nie podałes liczby. podaj dlugosc drugiego z boków w mm: ")
 
-print("pole prostokąta wynosi: ",  float(a) * float(b))
+# print("pole prostokąta wynosi: ",  float(a) * float(b))
 
-###########
+########### checking female or male name (latter a in the end)
+your_name = input("podaj swoje imie: ")
+
+if your_name[-1] == "a":
+    print("to imie jest żeńskie")
+else:
+    print("to imie jest męskie")
+
+#####
