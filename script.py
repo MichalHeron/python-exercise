@@ -118,36 +118,53 @@
 #     print("to imie jest męskie")
 
 #####
-number_one = int(input("podaj pierwszą liczbę: "))
-number_two = int(input("podaj drugą liczbę: "))
-number_three = int(input("podaj trzecią liczbę: "))
+# number_one = int(input("podaj pierwszą liczbę: "))
+# number_two = int(input("podaj drugą liczbę: "))
+# number_three = int(input("podaj trzecią liczbę: "))
 
-if number_one > number_two and number_one > number_three:
-    print(number_one)
-    if number_two > number_three:
-        print(number_two)
-        print(number_three)
-    else:
-        print(number_three)
-        print(number_two)
-elif number_two > number_one and number_two > number_three:
-    print(number_two)
-    if number_one > number_three:
-        print(number_one)
-        print(number_three)
-    else:
-        print(number_three)
-        print(number_one)
-else:
-    print(number_three)
-    if number_one > number_two:
-        print(number_one)
-        print(number_two)
-    else:
-        print(number_two)
-        print(number_one)
+# if number_one > number_two and number_one > number_three:
+#     print(number_one)
+#     if number_two > number_three:
+#         print(number_two)
+#         print(number_three)
+#     else:
+#         print(number_three)
+#         print(number_two)
+# elif number_two > number_one and number_two > number_three:
+#     print(number_two)
+#     if number_one > number_three:
+#         print(number_one)
+#         print(number_three)
+#     else:
+#         print(number_three)
+#         print(number_one)
+# else:
+#     print(number_three)
+#     if number_one > number_two:
+#         print(number_one)
+#         print(number_two)
+#     else:
+#         print(number_two)
+#         print(number_one)
 
-numbers = [number_one, number_two, number_three]
-numbers.sort(reverse=True)
-print(numbers)
+# numbers = [number_one, number_two, number_three]
+# numbers.sort(reverse=True)
+# print(numbers)
 ########
+
+import random
+
+random_number = random.randint(1, 100)
+win = False
+while not win:
+    your_number = int(input("podaj liczbę z przedziału 1-100: "))
+    if your_number == random_number:
+        print("wygrałeś")
+        win = True
+    elif your_number > random_number:
+        print("za dużo")
+    else:
+        print("za mało")
+print("GG")
+
+###################
