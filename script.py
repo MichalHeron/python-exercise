@@ -258,8 +258,21 @@
 
 ##############
 
-list_of_random_numbers = [3, 5, 2, 7, 4, 3, 7, 5, 3, 5, 9, 8]
-print("najwieksza liczba w liscie to: ", max(list_of_random_numbers))
-print("najmniejsza liczba w liscie to: ", min(list_of_random_numbers))
+# list_of_random_numbers = [3, 5, 2, 7, 4, 3, 7, 5, 3, 5, 9, 8]
+# print("najwieksza liczba w liscie to: ", max(list_of_random_numbers))
+# print("najmniejsza liczba w liscie to: ", min(list_of_random_numbers))
 
 ############
+
+text = input("podaj jakis tekst: ").split()
+
+
+dic_text = {}
+for word in text:
+    if word in dic_text:
+        dic_text[word] += 1
+    else:
+        dic_text[word] = 1
+print(dic_text)
+
+######
