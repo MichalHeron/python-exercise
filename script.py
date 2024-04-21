@@ -205,29 +205,35 @@
 # print(names)
 
 ##### dictionary
-phone_book = {
-    'Kamil': 100200300,
-    'Mariusz': 123456789,
-    'Paulina': 987654321
-}
+# phone_book = {
+#     'Kamil': 100200300,
+#     'Mariusz': 123456789,
+#     'Paulina': 987654321
+# }
 
-phone_book['Dominik'] = 349502432
+# phone_book['Dominik'] = 349502432
 
-print(phone_book.get('Kamil'))
-print(phone_book['Paulina'])
+# print(phone_book.get('Kamil'))
+# print(phone_book['Paulina'])
 
-phone_book.pop('Kamil') #usuwanie
+# phone_book.pop('Kamil') #usuwanie
 
-print(phone_book)
+# print(phone_book)
 
-for element in phone_book.items():
-    print(element[0] + ":" + str(element[1]))
+# for element in phone_book.items():
+#     print(element[0] + ":" + str(element[1]))
 
-for name, phone_number in phone_book.items():
-    print(name + ":" + str(phone_number))
+# for name, phone_number in phone_book.items():
+#     print(name + ":" + str(phone_number))
 
-for element in phone_book.values():
-    print(element)
+# for element in phone_book.values():
+#     print(element)
 
-#######
+####### tuple (krotka)(podobna do listy) ale nie modyfikujemy go 
+
+names = ('Kamil', 'Mariusz', 'Paulina')
+
+print(names[0])
+
+######
 
