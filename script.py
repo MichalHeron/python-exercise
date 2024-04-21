@@ -91,7 +91,7 @@
 #     if is_prime:
 #          print(n)
 
-         ###### sum of even numbers
+###### sum of even numbers
 # sum = 0;
 # for n in range (1, 100):
 #     if n % 2 == 0:
@@ -235,5 +235,13 @@
 #
 # print(names[0])
 
-######
+###### sum of the number in the list
+number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sum1 = 0
+for number in number_list:
+    sum1 += number
+
+print(sum1)
+
+################
 
