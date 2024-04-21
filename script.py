@@ -152,19 +152,55 @@
 # print(numbers)
 ########
 
-import random
+# import random
 
-random_number = random.randint(1, 100)
-win = False
-while not win:
-    your_number = int(input("podaj liczbę z przedziału 1-100: "))
-    if your_number == random_number:
-        print("wygrałeś")
-        win = True
-    elif your_number > random_number:
-        print("za dużo")
-    else:
-        print("za mało")
-print("GG")
+# random_number = random.randint(1, 100)
+# win = False
+# while not win:
+#     your_number = int(input("podaj liczbę z przedziału 1-100: "))
+#     if your_number == random_number:
+#         print("wygrałeś")
+#         win = True
+#     elif your_number > random_number:
+#         print("za dużo")
+#     else:
+#         print("za mało")
+# print("GG")
 
-###################
+################### lists
+
+# names = ['Kamil', 'Mariusz']
+# names.append('Kasia') #pojedynczy lement
+# names.extend(['Paulina', 'Mariusz']) #kilka elementow
+# print(names[0])
+
+# print(names)
+
+# for n in names:
+#     print(n)
+
+# del names[1]
+# names.remove('Kasia')
+# print(names.count('Mariusz'))
+# print(names)
+
+##### set  (zbiór)
+# names = {'Kamil', 'Mariusz'} # nie moze miec duplikatow nie sa uporzadkowane
+# names2 = {'Kamil', 'Paulina', 'Asia', 'Rafał'}
+
+# print(names.intersection(names2))
+# print(names.union(names2))
+
+# print(names.difference(names2))
+
+# print(names.symmetric_difference(names2))
+
+# names.add('Kasia')
+# names.update({'Adam', 'Rafał'})
+# print(names)
+
+# names.remove('Kasia')
+
+# print(names)
+#####
+
