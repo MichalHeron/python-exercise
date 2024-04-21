@@ -245,16 +245,21 @@
 
 ################ new list from anther list with filter
 
-# lista = ['Hello', 'World', 'Codeium']
-# liczba_znakow = sum(len(slowo) for slowo in lista)
-# print(liczba_znakow)
-
-lista2 = ['kot', 'wąż', 'kaczka', 'rana', 'krowa', 'pies', 'kot', 'kruk', 'mysz', 'gęś']
-lista3 = []
-for slowo in lista2:
-    if len(slowo) > 3:
-        lista3.append(slowo)
-print(lista3)
+# # lista = ['Hello', 'World', 'Codeium']
+# # liczba_znakow = sum(len(slowo) for slowo in lista)
+# # print(liczba_znakow)
+#
+# lista2 = ['kot', 'wąż', 'kaczka', 'rana', 'krowa', 'pies', 'kot', 'kruk', 'mysz', 'gęś']
+# lista3 = []
+# for slowo in lista2:
+#     if len(slowo) > 3:
+#         lista3.append(slowo)
+# print(lista3)
 
 ##############
 
+list_of_random_numbers = [3, 5, 2, 7, 4, 3, 7, 5, 3, 5, 9, 8]
+print("najwieksza liczba w liscie to: ", max(list_of_random_numbers))
+print("najmniejsza liczba w liscie to: ", min(list_of_random_numbers))
+
+############
