@@ -185,6 +185,7 @@
 # print(names)
 
 ##### set  (zbiór)
+# names3 = set()
 # names = {'Kamil', 'Mariusz'} # nie moze miec duplikatow nie sa uporzadkowane
 # names2 = {'Kamil', 'Paulina', 'Asia', 'Rafał'}
 
@@ -202,5 +203,31 @@
 # names.remove('Kasia')
 
 # print(names)
-#####
+
+##### dictionary
+phone_book = {
+    'Kamil': 100200300,
+    'Mariusz': 123456789,
+    'Paulina': 987654321
+}
+
+phone_book['Dominik'] = 349502432
+
+print(phone_book.get('Kamil'))
+print(phone_book['Paulina'])
+
+phone_book.pop('Kamil') #usuwanie
+
+print(phone_book)
+
+for element in phone_book.items():
+    print(element[0] + ":" + str(element[1]))
+
+for name, phone_number in phone_book.items():
+    print(name + ":" + str(phone_number))
+
+for element in phone_book.values():
+    print(element)
+
+#######
 
