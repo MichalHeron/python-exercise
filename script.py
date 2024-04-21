@@ -231,9 +231,9 @@
 
 ####### tuple (krotka)(podobna do listy) ale nie modyfikujemy go 
 
-names = ('Kamil', 'Mariusz', 'Paulina')
-
-print(names[0])
+# names = ('Kamil', 'Mariusz', 'Paulina')
+#
+# print(names[0])
 
 ######
 
