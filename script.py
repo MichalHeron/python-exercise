@@ -236,12 +236,25 @@
 # print(names[0])
 
 ###### sum of the number in the list
-number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-sum1 = 0
-for number in number_list:
-    sum1 += number
+# number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# sum1 = 0
+# for number in number_list:
+#     sum1 += number
+#
+# print(sum1)
 
-print(sum1)
+################ new list from anther list with filter
 
-################
+# lista = ['Hello', 'World', 'Codeium']
+# liczba_znakow = sum(len(slowo) for slowo in lista)
+# print(liczba_znakow)
+
+lista2 = ['kot', 'wąż', 'kaczka', 'rana', 'krowa', 'pies', 'kot', 'kruk', 'mysz', 'gęś']
+lista3 = []
+for slowo in lista2:
+    if len(slowo) > 3:
+        lista3.append(slowo)
+print(lista3)
+
+##############
 
