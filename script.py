@@ -264,15 +264,24 @@
 
 ############
 
-text = input("podaj jakis tekst: ").split()
+# text = input("podaj jakis tekst: ").split()
+#
+# dic_text = {}
+# for word in text:
+#     if word in dic_text:
+#         dic_text[word] += 1
+#     else:
+#         dic_text[word] = 1
+# print(dic_text)
+
+###### function
+
+def hello(name, last_name=None):
+    print("hello " + name)
+    if last_name is not None:
+        print("hello " + last_name)
 
 
-dic_text = {}
-for word in text:
-    if word in dic_text:
-        dic_text[word] += 1
-    else:
-        dic_text[word] = 1
-print(dic_text)
+hello(name="misa", last_name="sad")
 
-######
+
