@@ -289,17 +289,40 @@
 #
 #
 # print(strip_and_uppercase("  adad   "))
-countries_information = {"Poland": ("Warsaw", 38), "Germany": ("Berlin", 81), "France": ("Paris", 75)}
+# countries_information = {"Poland": ("Warsaw", 38), "Germany": ("Berlin", 81), "France": ("Paris", 75)}
 
 
 # countries_information = {"Poland": ["Warsaw", 38], "Germany": ["Berlin", 81], "France": ["Paris", 75]}
 
-def print_country_information(country):
-    print(country, countries_information[country][0], countries_information[country][1])
+# def print_country_information(country):
+#     print(country, countries_information[country][0], countries_information[country][1])
+#
+#
+# print_country_information("Poland")
 
 
-print_country_information("Poland")
+############## OOP
+
+# USer
+# Name
+# Mail
+# age
 
 
-##############
+class User:
+    def __init__(self, name, mail, age):
+        self.name = name
+        self.mail = mail
+        self.age = age
+
+    def hello(self):
+        print("hello " + self.name)
+
+
+user = User("Kamil", "kamil@wp.pl", 23)
+print(user.name)
+print(user.mail)
+print(user.age)
+
+user.hello()
 
