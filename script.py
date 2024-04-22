@@ -284,8 +284,22 @@
 #
 # hello(name="misa", last_name="sad")
 
-def strip_and_uppercase(text):
-    return str(text).strip().upper()
+# def strip_and_uppercase(text):
+#     return str(text).strip().upper()
+#
+#
+# print(strip_and_uppercase("  adad   "))
+countries_information = {"Poland": ("Warsaw", 38), "Germany": ("Berlin", 81), "France": ("Paris", 75)}
 
 
-print(strip_and_uppercase("  adad   "))
+# countries_information = {"Poland": ["Warsaw", 38], "Germany": ["Berlin", 81], "France": ["Paris", 75]}
+
+def print_country_information(country):
+    print(country, countries_information[country][0], countries_information[country][1])
+
+
+print_country_information("Poland")
+
+
+##############
+
