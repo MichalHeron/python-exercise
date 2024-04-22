@@ -276,12 +276,16 @@
 
 ###### function
 
-def hello(name, last_name=None):
-    print("hello " + name)
-    if last_name is not None:
-        print("hello " + last_name)
+# def hello(name, last_name=None):
+#     print("hello " + name)
+#     if last_name is not None:
+#         print("hello " + last_name)
+#
+#
+# hello(name="misa", last_name="sad")
+
+def strip_and_uppercase(text):
+    return str(text).strip().upper()
 
 
-hello(name="misa", last_name="sad")
-
-
+print(strip_and_uppercase("  adad   "))
